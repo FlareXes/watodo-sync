@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python3 /opt/watodo-sync/watodo-sync.py "$@"
+
+exit

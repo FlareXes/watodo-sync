@@ -1,0 +1,15 @@
+#!/bin/sh
+
+sudo mkdir -p /opt/watodo-sync/
+
+sudo chown -R "$(whoami):$(whoami)" /opt/watodo-sync/
+
+cp ./watodo-sync.py /opt/watodo-sync/
+
+chmod +x ./watodo-sync
+
+sudo cp ./watodo-sync /usr/local/bin/
+
+printf "\nNOW YOU CAN DELETE THIS REPO\n\n"
+
+exit
